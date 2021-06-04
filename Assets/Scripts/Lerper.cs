@@ -1,16 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Lerper : MonoBehaviour
 {
-    private bool shouldLerp = false;
+    static int c;
+    [SerializeField] static private bool shouldLerp = false;
 
-    public Vector2 endPos;
-    public Vector2 startPos;
+    public Vector3 endPos;
+    [SerializeField] private Vector3 startPos;
 
     public float timeStartedLerping;
     public float lerpTime;
+
+    public int clicked;
 
     private void StartLerping()
     {
@@ -29,7 +33,8 @@ public class Lerper : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        startPos = transform.position;
+        StartLerping();
     }
 
     // Update is called once per frame
@@ -38,6 +43,47 @@ public class Lerper : MonoBehaviour
         if (shouldLerp)
         {
             transform.position = Lerp(startPos, endPos, timeStartedLerping, lerpTime);
+            //transform.position = Lerp(c.ScreenToWorldPoint(startPos), c.ScreenToWorldPoint(endPos), timeStartedLerping, lerpTime);
+            //transform.position = Lerp(c.ScreenToViewportPoint(startPos), c.ScreenToViewportPoint(endPos), timeStartedLerping, lerpTime);
         }
+        else
+        {
+            transform.position = Lerp(endPos, startPos, timeStartedLerping, lerpTime);
+            //transform.position = Lerp(c.ScreenToWorldPoint(endPos), c.ScreenToWorldPoint(startPos), timeStartedLerping, lerpTime);
+            //transform.position = Lerp(c.ScreenToViewportPoint(startPos), c.ScreenToViewportPoint(endPos), timeStartedLerping, lerpTime);
+        }
+    }
+
+    public void ReverseLerp()
+    {
+        /*timeStartedLerping = Time.time;
+        shouldLerp = !shouldLerp;*/
+        if (shouldLerp == true)
+        {
+            c = clicked;
+        }
+        InverseShouldLerp();
+        float temporalTime = Time.time;
+        foreach (GameObject g in GameObject.FindGameObjectsWithTag("portrait"))
+        {
+            Lerper b = g.GetComponent<Lerper>();
+            b.timeStartedLerping = temporalTime;
+            
+        }
+    }
+
+    public int ReturnC()
+    {
+        return c;
+    }
+
+    public bool ReturnLerp()
+    {
+        return shouldLerp;
+    }
+
+    public void InverseShouldLerp()
+    {
+        shouldLerp = !shouldLerp;
     }
 }
