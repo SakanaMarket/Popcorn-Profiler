@@ -5,8 +5,9 @@ using UnityEngine.UI;
 
 public class Lerper : MonoBehaviour
 {
-    static int c;
     [SerializeField] static private bool shouldLerp = false;
+    [SerializeField] Text desc;
+    [SerializeField] string d = "";
 
     public Vector3 endPos;
     [SerializeField] private Vector3 startPos;
@@ -56,25 +57,14 @@ public class Lerper : MonoBehaviour
 
     public void ReverseLerp()
     {
-        /*timeStartedLerping = Time.time;
-        shouldLerp = !shouldLerp;*/
-        if (shouldLerp == true)
-        {
-            c = clicked;
-        }
+        this.transform.SetSiblingIndex(-1);
         InverseShouldLerp();
         float temporalTime = Time.time;
         foreach (GameObject g in GameObject.FindGameObjectsWithTag("portrait"))
         {
             Lerper b = g.GetComponent<Lerper>();
             b.timeStartedLerping = temporalTime;
-            
         }
-    }
-
-    public int ReturnC()
-    {
-        return c;
     }
 
     public bool ReturnLerp()
