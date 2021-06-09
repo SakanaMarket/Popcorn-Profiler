@@ -7,7 +7,9 @@ public class Lerper : MonoBehaviour
 {
     [SerializeField] static private bool shouldLerp = false;
     [SerializeField] Text desc;
-    [SerializeField] string d = "";
+    [TextArea(0, 30)]
+    [SerializeField] private string d = "";
+
 
     public Vector3 endPos;
     [SerializeField] private Vector3 startPos;
@@ -44,14 +46,10 @@ public class Lerper : MonoBehaviour
         if (shouldLerp)
         {
             transform.position = Lerp(startPos, endPos, timeStartedLerping, lerpTime);
-            //transform.position = Lerp(c.ScreenToWorldPoint(startPos), c.ScreenToWorldPoint(endPos), timeStartedLerping, lerpTime);
-            //transform.position = Lerp(c.ScreenToViewportPoint(startPos), c.ScreenToViewportPoint(endPos), timeStartedLerping, lerpTime);
         }
         else
         {
             transform.position = Lerp(endPos, startPos, timeStartedLerping, lerpTime);
-            //transform.position = Lerp(c.ScreenToWorldPoint(endPos), c.ScreenToWorldPoint(startPos), timeStartedLerping, lerpTime);
-            //transform.position = Lerp(c.ScreenToViewportPoint(startPos), c.ScreenToViewportPoint(endPos), timeStartedLerping, lerpTime);
         }
     }
 
@@ -75,5 +73,10 @@ public class Lerper : MonoBehaviour
     public void InverseShouldLerp()
     {
         shouldLerp = !shouldLerp;
+    }
+
+    public string ReturnDesc()
+    {
+        return d;
     }
 }

@@ -6,9 +6,14 @@ using UnityEngine.SceneManagement;
 
 public class Play : MonoBehaviour
 {
-     public void loadscene()
+     public void Loadscene()
     {
         SceneManager.LoadScene("Main");
+    }
+
+    public void Exit()
+    {
+        Application.Quit();
     }
 
 }
