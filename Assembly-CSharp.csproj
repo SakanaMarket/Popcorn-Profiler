@@ -59,6 +59,7 @@
     <Compile Include="Assets\Scripts\Manager.cs" />
     <Compile Include="Assets\Scripts\Lerper.cs" />
     <Compile Include="Assets\Scripts\Play.cs" />
+    <Compile Include="Assets\Scripts\Profile.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

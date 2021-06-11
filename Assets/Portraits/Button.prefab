@@ -105,6 +105,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7636584667099980439}
   - component: {fileID: 7636584667450796514}
+  - component: {fileID: 8884371722449106220}
   - component: {fileID: 7636584667099980442}
   - component: {fileID: 7636584667450796512}
   - component: {fileID: 7636584667099980438}
@@ -144,6 +145,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7636584667450796513}
   m_CullTransparentMesh: 1
+--- !u!114 &8884371722449106220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7636584667450796513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76566151526f4b642b9c0bab7602074b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  first: 
+  last: 
+  hobby: 
+  addr: 
+  city: 
+  state: 
+  zip: 
 --- !u!114 &7636584667099980442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,6 +176,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b66b5bc03777f4ca35ebd789a7d79a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  desc: {fileID: 0}
+  d: 
   endPos: {x: 850, y: 900, z: 0}
   startPos: {x: 0, y: 0, z: 0}
   timeStartedLerping: 0

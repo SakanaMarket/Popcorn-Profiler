@@ -322,6 +322,7 @@
 "Assets/Scripts/Lerper.cs"
 "Assets/Scripts/Manager.cs"
 "Assets/Scripts/Play.cs"
+"Assets/Scripts/Profile.cs"
 -langversion:8.0
 
 /deterministic
