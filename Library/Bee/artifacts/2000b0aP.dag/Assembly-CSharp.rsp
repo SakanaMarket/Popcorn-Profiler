@@ -275,9 +275,11 @@
 -r:"Library/Bee/artifacts/2000b0aP.dag/Unity.VisualScripting.State.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aP.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/Lerper.cs"
+"Assets/Scripts/ManageInfo.cs"
 "Assets/Scripts/Manager.cs"
 "Assets/Scripts/Play.cs"
 "Assets/Scripts/Profile.cs"
+"Assets/Scripts/Transitions.cs"
 -langversion:8.0
 
 /deterministic
