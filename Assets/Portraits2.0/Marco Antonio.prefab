@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1871685811274891978}
   - component: {fileID: 1871685810651449791}
   - component: {fileID: 813084579182613873}
-  - component: {fileID: 1871685811274891975}
   - component: {fileID: 2673239748262290153}
   - component: {fileID: 1871685810651449789}
   - component: {fileID: 1871685811274891979}
@@ -70,34 +69,6 @@ MonoBehaviour:
   city: Barbers Point
   state: HI
   zip: 96862
---- !u!114 &1871685811274891975
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1871685810651449788}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08b66b5bc03777f4ca35ebd789a7d79a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  desc: {fileID: 0}
-  d: 'Marco Antonia grew up in Spain and moved to the US when he was 3.
-
-
-    Growing
-    up he was always fascinated by spy movies, not for the bad guys, but for the
-    good guys that always win in the end.
-
-
-    Now he works with the Police Department
-    to combat cyber crimes that he saw so much in the movies.'
-  endPos: {x: 1600, y: 250, z: 0}
-  startPos: {x: 0, y: 0, z: 0}
-  timeStartedLerping: 0
-  lerpTime: 1
-  clicked: 15
 --- !u!114 &2673239748262290153
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -186,7 +157,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1871685811274891975}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Lerper, Assembly-CSharp
         m_MethodName: ReverseLerp
         m_Mode: 1

@@ -106,7 +106,6 @@ GameObject:
   - component: {fileID: 9218093949916243396}
   - component: {fileID: 9218093950299434673}
   - component: {fileID: 7880182048064123519}
-  - component: {fileID: 9218093949916243401}
   - component: {fileID: 3131812067669672047}
   - component: {fileID: 9218093950299434675}
   - component: {fileID: 9218093949916243397}
@@ -165,27 +164,6 @@ MonoBehaviour:
   city: Pompano Beach
   state: FL
   zip: 33064
---- !u!114 &9218093949916243401
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9218093950299434674}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08b66b5bc03777f4ca35ebd789a7d79a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  desc: {fileID: 0}
-  d: "Kyle is the CEO at Laser Tech., a 3D printing business. \n\nIn order to assert
-    his dominance in his business, he tries to hack other similar businesses and
-    shut them down.\n\nHe does this to ensure that only his business will thrive."
-  endPos: {x: 1350, y: 250, z: 0}
-  startPos: {x: 0, y: 0, z: 0}
-  timeStartedLerping: 0
-  lerpTime: 1
-  clicked: 11
 --- !u!114 &3131812067669672047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -274,7 +252,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9218093949916243401}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Lerper, Assembly-CSharp
         m_MethodName: ReverseLerp
         m_Mode: 1

@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 426007641301121755}
   - component: {fileID: 426007641923514798}
   - component: {fileID: 1682169195702267232}
-  - component: {fileID: 426007641301121750}
   - component: {fileID: 3011754445728462100}
   - component: {fileID: 426007641923514796}
   - component: {fileID: 426007641301121754}
@@ -70,29 +69,6 @@ MonoBehaviour:
   city: Madison
   state: WI
   zip: 53705
---- !u!114 &426007641301121750
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 426007641923514797}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08b66b5bc03777f4ca35ebd789a7d79a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  desc: {fileID: 0}
-  d: "Aime just entered Bay Bee Corp and told the receptionist that she is an intern
-    and that she needs to print out papers for the manager. \n\nThe receptionist
-    directs her to the nearest office's printer. \n\nWhen allowed to print her paper,
-    she inserts a USB with a virus into the printer so that when the next print job
-    is sent, she will gain access to the company's network.\r"
-  endPos: {x: 1100, y: 250, z: 0}
-  startPos: {x: 0, y: 0, z: 0}
-  timeStartedLerping: 0
-  lerpTime: 1
-  clicked: 7
 --- !u!114 &3011754445728462100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,7 +157,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 426007641301121750}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Lerper, Assembly-CSharp
         m_MethodName: ReverseLerp
         m_Mode: 1

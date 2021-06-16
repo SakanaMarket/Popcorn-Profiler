@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1586227195198448476}
   - component: {fileID: 1586227195854399529}
   - component: {fileID: 338422476712506599}
-  - component: {fileID: 1586227195198448465}
   - component: {fileID: 8774056203938560846}
   - component: {fileID: 1586227195854399531}
   - component: {fileID: 1586227195198448477}
@@ -70,27 +69,6 @@ MonoBehaviour:
   city: Savannah
   state: GA
   zip: 31401
---- !u!114 &1586227195198448465
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1586227195854399530}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08b66b5bc03777f4ca35ebd789a7d79a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  desc: {fileID: 0}
-  d: "Callie is a techie fashionista. \n\nRight now, she is working with her friend,
-    Clem, to steal Taco Bell's top secret sale information and data.\n\nShe intends
-    to use this information to help her new taco business \rthrive."
-  endPos: {x: 1600, y: 650, z: 0}
-  startPos: {x: 0, y: 0, z: 0}
-  timeStartedLerping: 0
-  lerpTime: 1
-  clicked: 13
 --- !u!114 &8774056203938560846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,7 +157,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1586227195198448465}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Lerper, Assembly-CSharp
         m_MethodName: ReverseLerp
         m_Mode: 1

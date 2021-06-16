@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 802509325993665907}
   - component: {fileID: 802509325374549510}
   - component: {fileID: 1842585445081330376}
-  - component: {fileID: 802509325993665918}
   - component: {fileID: 3418308940481678499}
   - component: {fileID: 802509325374549508}
   - component: {fileID: 802509325993665906}
@@ -70,30 +69,6 @@ MonoBehaviour:
   city: Spokane
   state: ID
   zip: 99201
---- !u!114 &802509325993665918
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 802509325374549509}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08b66b5bc03777f4ca35ebd789a7d79a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  desc: {fileID: 0}
-  d: "Jackie is a full-time professor at a local college but is growing disgusted
-    of society.\n\nHe recently joined an online group of nefarious hackers that plan
-    to steal confidential school information to sell on the black market.\n\nTo do
-    this, they plan set something on fire outside the facility as a decoy and to
-    create chaos as employees evacuated. \n\nThis will allow his friends to enter
-    the building undetected.\r\n"
-  endPos: {x: 1100, y: 450, z: 0}
-  startPos: {x: 0, y: 0, z: 0}
-  timeStartedLerping: 0
-  lerpTime: 1
-  clicked: 6
 --- !u!114 &3418308940481678499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -182,7 +157,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 802509325993665918}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Lerper, Assembly-CSharp
         m_MethodName: ReverseLerp
         m_Mode: 1

@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3227374083422413428}
   - component: {fileID: 3227374082967791873}
   - component: {fileID: 4501585222832960975}
-  - component: {fileID: 3227374083422413433}
   - component: {fileID: 2210946436804598842}
   - component: {fileID: 3227374082967791875}
   - component: {fileID: 3227374083422413429}
@@ -70,29 +69,6 @@ MonoBehaviour:
   city: San Pablo
   state: CA
   zip: 94806
---- !u!114 &3227374083422413433
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3227374082967791874}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08b66b5bc03777f4ca35ebd789a7d79a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  desc: {fileID: 0}
-  d: "Linda is the CEO of Linda Kim Designs. \n\nShe has other business enterprises
-    and likes to keep busy. \n\nFrom fashion to makeup to home products, she has
-    quite the reputation.\n\nAs a CEO, Linda does everything to make sure all her
-    clients\u2019 information are safe from hackers\r by hiring only the best cybersecurity
-    professionals.\n"
-  endPos: {x: 850, y: 250, z: 0}
-  startPos: {x: 0, y: 0, z: 0}
-  timeStartedLerping: 0
-  lerpTime: 1
-  clicked: 3
 --- !u!114 &2210946436804598842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,7 +157,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3227374083422413433}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Lerper, Assembly-CSharp
         m_MethodName: ReverseLerp
         m_Mode: 1

@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3111710848984745361}
   - component: {fileID: 3111710849670975204}
   - component: {fileID: 4151822762343518762}
-  - component: {fileID: 3111710848984745372}
   - component: {fileID: 1016473925649293516}
   - component: {fileID: 3111710849670975206}
   - component: {fileID: 3111710848984745360}
@@ -70,29 +69,6 @@ MonoBehaviour:
   city: Aurora
   state: CO
   zip: 80012
---- !u!114 &3111710848984745372
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3111710849670975207}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08b66b5bc03777f4ca35ebd789a7d79a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  desc: {fileID: 0}
-  d: "Tammy is a very well-known ethical hacker. \n\nHer job is to search for vulnerabilities
-    by having permission to hack various systems.\n\nShe decided to become a consultant
-    where she can use her supernatural skills to help companies find vulnerabilities
-    in their systems and fix them before the bad guys strike!\r\n\nThis way, she
-    can help multiple companies at once.\n"
-  endPos: {x: 1600, y: 850, z: 0}
-  startPos: {x: 0, y: 0, z: 0}
-  timeStartedLerping: 0
-  lerpTime: 1
-  clicked: 12
 --- !u!114 &1016473925649293516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,7 +157,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3111710848984745372}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Lerper, Assembly-CSharp
         m_MethodName: ReverseLerp
         m_Mode: 1

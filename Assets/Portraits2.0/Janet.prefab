@@ -106,7 +106,6 @@ GameObject:
   - component: {fileID: 5782755356363841049}
   - component: {fileID: 5782755355912361324}
   - component: {fileID: 4823708223429609890}
-  - component: {fileID: 5782755356363841044}
   - component: {fileID: 791776725260202283}
   - component: {fileID: 5782755355912361326}
   - component: {fileID: 5782755356363841048}
@@ -165,34 +164,6 @@ MonoBehaviour:
   city: Farmington
   state: AR
   zip: 72730
---- !u!114 &5782755356363841044
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5782755355912361327}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08b66b5bc03777f4ca35ebd789a7d79a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  desc: {fileID: 0}
-  d: 'Janet used to be a notorious hacker associated with Anonymous.
-
-
-    After
-    being arrested for cyber crimes and serving her sentence, she now teaches cybersecurity
-    at a high school.
-
-
-    Turning over a new leaf, she wants to ensure no one falls
-    for the false heroism she thought she was fighting for with Anonymous.'
-  endPos: {x: 1350, y: 650, z: 0}
-  startPos: {x: 0, y: 0, z: 0}
-  timeStartedLerping: 0
-  lerpTime: 1
-  clicked: 9
 --- !u!114 &791776725260202283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -281,7 +252,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5782755356363841044}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Lerper, Assembly-CSharp
         m_MethodName: ReverseLerp
         m_Mode: 1

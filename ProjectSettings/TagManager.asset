@@ -7,6 +7,8 @@ TagManager:
   - Background
   - portrait
   - canvas
+  - music
+  - slider
   layers:
   - Default
   - TransparentFX

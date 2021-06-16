@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1603563772232183353}
   - component: {fileID: 1603563771546871116}
   - component: {fileID: 355846531493886338}
-  - component: {fileID: 1603563772232183348}
   - component: {fileID: 2293531005304802957}
   - component: {fileID: 1603563771546871118}
   - component: {fileID: 1603563772232183352}
@@ -70,37 +69,6 @@ MonoBehaviour:
   city: Bloomington
   state: IL
   zip: 61701
---- !u!114 &1603563772232183348
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1603563771546871119}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08b66b5bc03777f4ca35ebd789a7d79a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  desc: {fileID: 0}
-  d: 'Dmitry recently arrived in the US on a work visa from Ukraine.
-
-
-    He loves
-    to games and is actually a game programmer.
-
-
-    His main role is networking
-    for games so that people can play online.
-
-
-    Everyday he ensures that no hackers
-    can penetrate his company''s games.'
-  endPos: {x: 850, y: 450, z: 0}
-  startPos: {x: 0, y: 0, z: 0}
-  timeStartedLerping: 0
-  lerpTime: 1
-  clicked: 2
 --- !u!114 &2293531005304802957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,7 +157,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1603563772232183348}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Lerper, Assembly-CSharp
         m_MethodName: ReverseLerp
         m_Mode: 1

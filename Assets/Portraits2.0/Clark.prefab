@@ -106,7 +106,6 @@ GameObject:
   - component: {fileID: 8556557779796215252}
   - component: {fileID: 8556557780519145121}
   - component: {fileID: 7210201149825159791}
-  - component: {fileID: 8556557779796215257}
   - component: {fileID: 3552689527674714029}
   - component: {fileID: 8556557780519145123}
   - component: {fileID: 8556557779796215253}
@@ -165,28 +164,6 @@ MonoBehaviour:
   city: Minneapolis
   state: MN
   zip: 55402
---- !u!114 &8556557779796215257
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8556557780519145122}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08b66b5bc03777f4ca35ebd789a7d79a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  desc: {fileID: 0}
-  d: "AKA Superman. \n\nIn this dimension, Clark Kent decided to become a doctor
-    instead of a reporter. \n\nGiven his intelligence and powers, he became a super
-    doctor, saving every patient\u2019s life, finding cures to all diseases, including
-    COVID-19, while defending the universe from Lex and all bad guys!\r"
-  endPos: {x: 850, y: 650, z: 0}
-  startPos: {x: 0, y: 0, z: 0}
-  timeStartedLerping: 0
-  lerpTime: 1
-  clicked: 1
 --- !u!114 &3552689527674714029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -278,7 +255,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8556557779796215257}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Lerper, Assembly-CSharp
         m_MethodName: ReverseLerp
         m_Mode: 1

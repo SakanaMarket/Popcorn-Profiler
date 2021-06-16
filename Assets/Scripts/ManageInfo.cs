@@ -21,7 +21,7 @@ public class ManageInfo : MonoBehaviour
         {
             StopAllCoroutines();
             showButton.SetActive(false);
-            Reveal(false);
+            HideDesc();
             ChangeProfile(defProfile);
         }
         else
@@ -45,9 +45,9 @@ public class ManageInfo : MonoBehaviour
         return lastChild.GetComponent<Transitions>().ReturnLR();
     }
 
-    public void Reveal(bool b)
+    public void RevealDesc()
     {
-        if (b)
+        if (Desc.text == "")
         {
             Desc.text = lastChild.GetComponent<Transitions>().ReturnD();
         }
@@ -55,16 +55,15 @@ public class ManageInfo : MonoBehaviour
         {
             Desc.text = "";
         }
-        
+    }
+
+    public void HideDesc()
+    {
+        Desc.text = "";
     }
     public void ChangeProfile(string s)
     {
         redacted.GetComponent<TextMeshProUGUI>().text = s;
 
-    }
-
-    public void Exit()
-    {
-        Application.Quit();
     }
 }

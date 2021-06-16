@@ -319,12 +319,14 @@
 -r:"Library/Bee/artifacts/2000b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/VSSettingsProvider.ref.dll"
+"Assets/Scripts/AdjustSlider.cs"
+"Assets/Scripts/GeneralManagement.cs"
 "Assets/Scripts/Lerper.cs"
 "Assets/Scripts/ManageInfo.cs"
 "Assets/Scripts/Manager.cs"
-"Assets/Scripts/Play.cs"
 "Assets/Scripts/Profile.cs"
 "Assets/Scripts/Transitions.cs"
+"Assets/Scripts/Volume.cs"
 -langversion:8.0
 
 /deterministic

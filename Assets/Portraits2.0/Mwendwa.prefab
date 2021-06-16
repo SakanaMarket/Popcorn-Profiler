@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 2221312493210782411}
   - component: {fileID: 2221312493662126526}
   - component: {fileID: 892442494017314160}
-  - component: {fileID: 2221312493210782406}
   - component: {fileID: 8943451073298165216}
   - component: {fileID: 2221312493662126524}
   - component: {fileID: 2221312493210782410}
@@ -70,34 +69,6 @@ MonoBehaviour:
   city: New Orleans
   state: LA
   zip: 70117
---- !u!114 &2221312493210782406
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2221312493662126525}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08b66b5bc03777f4ca35ebd789a7d79a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  desc: {fileID: 0}
-  d: 'Mwendwa (Mend-wah) is a fitness teacher really well known at his gym.
-
-
-    However,
-    in his free time, he likes to write scripts to automate sending scam emails to
-    random people.
-
-
-    These email try to persuade people into clicking links that
-    will steal their credit info.'
-  endPos: {x: 1100, y: 650, z: 0}
-  startPos: {x: 0, y: 0, z: 0}
-  timeStartedLerping: 0
-  lerpTime: 1
-  clicked: 5
 --- !u!114 &8943451073298165216
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -186,7 +157,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2221312493210782406}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Lerper, Assembly-CSharp
         m_MethodName: ReverseLerp
         m_Mode: 1

@@ -59,9 +59,11 @@
     <Compile Include="Assets\Scripts\Transitions.cs" />
     <Compile Include="Assets\Scripts\Manager.cs" />
     <Compile Include="Assets\Scripts\Profile.cs" />
+    <Compile Include="Assets\Scripts\AdjustSlider.cs" />
     <Compile Include="Assets\Scripts\Lerper.cs" />
-    <Compile Include="Assets\Scripts\Play.cs" />
+    <Compile Include="Assets\Scripts\GeneralManagement.cs" />
     <Compile Include="Assets\Scripts\ManageInfo.cs" />
+    <Compile Include="Assets\Scripts\Volume.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

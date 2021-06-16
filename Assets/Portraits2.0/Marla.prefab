@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 4002738023537372891}
   - component: {fileID: 4002738023149987246}
   - component: {fileID: 2683491510603626848}
-  - component: {fileID: 4002738023537372886}
   - component: {fileID: 1067114175711560651}
   - component: {fileID: 4002738023149987244}
   - component: {fileID: 4002738023537372890}
@@ -70,37 +69,6 @@ MonoBehaviour:
   city: Phoenix
   state: AZ
   zip: 85003
---- !u!114 &4002738023537372886
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4002738023149987245}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08b66b5bc03777f4ca35ebd789a7d79a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  desc: {fileID: 0}
-  d: 'Marla is one of the best in her work.
-
-
-    She is a cryptographer that ensures
-    confidential information stays confidential.
-
-
-    In all her 30 years of work,
-    no one has been able to crack her encryption methods.
-
-
-    This is why she is
-    so wanted in her field of work!'
-  endPos: {x: 1600, y: 450, z: 0}
-  startPos: {x: 0, y: 0, z: 0}
-  timeStartedLerping: 0
-  lerpTime: 1
-  clicked: 14
 --- !u!114 &1067114175711560651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,7 +157,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4002738023537372886}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Lerper, Assembly-CSharp
         m_MethodName: ReverseLerp
         m_Mode: 1

@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 2725269521117388541}
   - component: {fileID: 2725269520394458504}
   - component: {fileID: 3991071599910209862}
-  - component: {fileID: 2725269521117388528}
   - component: {fileID: 3239262204773220961}
   - component: {fileID: 2725269520394458506}
   - component: {fileID: 2725269521117388540}
@@ -70,29 +69,6 @@ MonoBehaviour:
   city: Hopkins
   state: MO
   zip: 64461
---- !u!114 &2725269521117388528
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2725269520394458507}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08b66b5bc03777f4ca35ebd789a7d79a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  desc: {fileID: 0}
-  d: "Bijan is a double agent who is on a mission to recover the god\u2019s eye from
-    a notorious criminal. \n\nThe god\u2019s eye is a program that will give the
-    user the power to have access to all kinds of devices connected to the internet.
-    \n\nBijan wants to acquire this device for himself to launch the biggest virus
-    to take down the CIA\u2019s defense system\r"
-  endPos: {x: 1350, y: 850, z: 0}
-  startPos: {x: 0, y: 0, z: 0}
-  timeStartedLerping: 0
-  lerpTime: 1
-  clicked: 8
 --- !u!114 &3239262204773220961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,7 +157,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2725269521117388528}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Lerper, Assembly-CSharp
         m_MethodName: ReverseLerp
         m_Mode: 1

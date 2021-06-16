@@ -106,7 +106,6 @@ GameObject:
   - component: {fileID: 9060601606871090884}
   - component: {fileID: 9060601607591005617}
   - component: {fileID: 8001912894868967807}
-  - component: {fileID: 9060601606871090889}
   - component: {fileID: 6586142055276077630}
   - component: {fileID: 9060601607591005619}
   - component: {fileID: 9060601606871090885}
@@ -165,29 +164,6 @@ MonoBehaviour:
   city: Castle Creek
   state: NY
   zip: 13744
---- !u!114 &9060601606871090889
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9060601607591005618}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08b66b5bc03777f4ca35ebd789a7d79a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  desc: {fileID: 0}
-  d: "Ben loves video games and he is getting tired of not being able to get the
-    newest game releases. \n\nSo he decided to attend E3, a popular game convention.
-    \n\nHe didn't bother buying tickets because he knows an easy way to get in.\n\nAt
-    the day of the convention, he snuck behind an unsuspecting person with tickets
-    hanging out of their jacket pocket.\n\nYou can probably fill in the rest.\n"
-  endPos: {x: 1100, y: 850, z: 0}
-  startPos: {x: 0, y: 0, z: 0}
-  timeStartedLerping: 0
-  lerpTime: 1
-  clicked: 4
 --- !u!114 &6586142055276077630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -276,7 +252,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9060601606871090889}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Lerper, Assembly-CSharp
         m_MethodName: ReverseLerp
         m_Mode: 1
